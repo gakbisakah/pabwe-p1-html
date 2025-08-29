@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran</title>
+</head>
+<body>
+  <header>
+    <h1>Form Pendaftaran</h1>
+    <nav>
+      <a href="index.html">Blog</a> |
+      <a href="register.html">Form Pendaftaran</a> |
+      <a href="nilai.html">Tabel Nilai</a> |
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama" required><br><br>
+
+      <p>Jenis Kelamin:</p>
+      <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+      <label for="laki">Laki-laki</label><br>
+      <input type="radio" id="perempuan" name="gender" value="Perempuan">
+      <label for="perempuan">Perempuan</label><br><br>
+
+      <label for="tempat">Tempat Lahir:</label><br>
+      <input type="text" id="tempat" name="tempat" required><br><br>
+
+      <label for="tanggal">Tanggal Lahir:</label><br>
+      <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+      <p>Hobi:</p>
+      <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+      <label for="membaca">Membaca</label><br>
+      <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+      <label for="olahraga">Olahraga</label><br>
+      <input type="checkbox" id="musik" name="hobi" value="Musik">
+      <label for="musik">Musik</label><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <input type="checkbox" id="persetujuan" name="persetujuan" required>
+      <label for="persetujuan">Saya setuju dengan syarat dan ketentuan</label><br><br>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
