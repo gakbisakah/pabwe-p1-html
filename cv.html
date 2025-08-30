@@ -1,105 +1,82 @@
 <!DOCTYPE html>
-<!-- Ini memberitahu browser kalau kita pakai HTML5 -->
-
 <html lang="id">
-<!-- Halaman HTML ini pakai bahasa Indonesia -->
 
 <head>
-  <!-- Bagian kepala halaman, isinya pengaturan -->
   <meta charset="UTF-8">
-  <!-- Supaya tulisan bisa tampil semua huruf dengan benar -->
-  <title>Curriculum Vitae</title>
-  <!-- Judul halaman yang akan muncul di tab browser -->
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Christian Hutahaean</title>
+  </head>
 
 <body>
-  <!-- Semua isi halaman akan ditampilkan di dalam <body> -->
 
   <header>
-    <!-- Bagian atas halaman (kepala halaman) -->
     <h1>Curriculum Vitae</h1>
-    <!-- Judul besar halaman -->
-
     <nav>
-      <!-- Menu untuk pindah ke halaman lain -->
       <a href="index.html">Blog</a> |
       <a href="register.html">Form Pendaftaran</a> |
       <a href="nilai.html">Tabel Nilai</a> |
-      <a href="cv.html">CV</a>
+      <a href="cv.html" aria-current="page">CV</a>
     </nav>
   </header>
 
   <main>
-    <!-- Bagian utama isi halaman -->
-
     <section>
-      <!-- Bagian data diri -->
-      <img src="assets/images/postku.jpg" alt="Cover Post 2" width="300">
-      <!-- Foto profil -->
-      <h2>Christian Hutahaean</h2>
-      <!-- Nama -->
+      <h2>Informasi Pribadi</h2>
+      <figure>
+        <img src="assets/images/christian.jpg" alt="Foto profil Christian Hutahaean" width="200" height="200">
+        </figure>
+      <h3>Christian Hutahaean</h3>
       <p>Mahasiswa Informatika yang tertarik pada CyberSecurity</p>
-      <!-- Deskripsi singkat tentang diri -->
     </section>
 
     <section>
-      <!-- Bagian kontak -->
-      <h3>Kontak</h3>
-      <p>Email: <a href="mailto:christian@example.com">christian@.com</a></p>
-      <!-- Alamat email -->
-      <p>WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a></p>
-      <!-- Nomor WhatsApp -->
-    </section>
+      <h2>Kontak</h2>
+      <p><strong>Email:</strong> <a href="mailto:christian@example.com">christian@example.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">+62 812-3456-7890</a></p>
+      </section>
 
     <section>
-      <!-- Bagian pendidikan -->
-      <h3>Pendidikan</h3>
+      <h2>Pendidikan</h2>
       <ul>
-        <li>SMA Negeri 1 Amerika (2020 - 2023)</li>
-        <li>S1 Informatika, Universitas XYZ (2023 - sekarang)</li>
+        <li><strong>SMA Negeri 1 Amerika</strong> (2020 - 2023)</li>
+        <li><strong>S1 Informatika, Universitas XYZ</strong> (2023 - sekarang)</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Pengalaman</h2>
+      <ul>
+        <li><strong>Mahasiswa IT DEl</strong></li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Keahlian Teknis</h2>
+      <ul>
+        <li><strong>Bahasa Pemrograman:</strong> HTML, CSS, JavaScript, Java (OOP, Spring Boot)</li>
+        <li><strong>Database:</strong> MySQL</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Sertifikat</h2>
+      <ul>
+        <li><strong>Dicoding</strong> — Belajar Dasar Pemrograman Web (2024)</li>
       </ul>
-      <!-- Daftar sekolah dan kuliah -->
     </section>
 
     <section>
-      <!-- Bagian pengalaman -->
-      <h3>Pengalaman</h3>
+      <h2>Portofolio Proyek</h2>
       <ul>
-        <li>Mahasiswa IT DEl</li>
-      </ul>
-      <!-- Daftar pengalaman -->
-    </section>
-
-    <section>
-      <!-- Bagian keahlian -->
-      <h3>Keahlian</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Java (OOP, Spring Boot)</li>
-        <li>Database MySQL</li>
-      </ul>
-      <!-- Daftar kemampuan yang dimiliki -->
-    </section>
-
-    <section>
-      <!-- Bagian sertifikat -->
-      <h3>Sertifikat</h3>
-      <ul>
-        <li>Dicoding — Belajar Dasar Pemrograman Web (2024)</li>
-      </ul>
-      <!-- Sertifikat yang pernah didapat -->
-    </section>
-
-    <section>
-      <!-- Bagian portfolio -->
-      <h3>Portfolio</h3>
-      <ul>
-        <li><a href="index.html">Blog Website</a></li>
-        <!-- Link ke proyek blog -->
-        <li><a href="https://github.com/username/project" target="_blank">Project GitHub</a></li>
-        <!-- Link ke proyek di GitHub -->
+        <li><a href="index.html"><strong>Blog Website</strong></a></li>
+        <li><a href="https://github.com/username/project" target="_blank" rel="noopener noreferrer"><strong>Project GitHub</strong></a></li>
       </ul>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Christian Hutahaean. Semua hak dilindungi.</p>
+    </footer>
+
 </body>
 </html>
