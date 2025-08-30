@@ -1,14 +1,26 @@
 <!DOCTYPE html>
+<!-- Baris ini bilang ke browser kalau kita pakai HTML5 -->
+
 <html lang="id">
+<!-- Tag <html> artinya halaman ini pakai bahasa Indonesia -->
+
 <head>
+  <!-- Bagian kepala, isinya pengaturan -->
   <meta charset="UTF-8">
+  <!-- Supaya teks bisa menampilkan semua huruf -->
   <title>Detail Blog</title>
+  <!-- Judul halaman yang muncul di tab browser -->
 </head>
+
 <body>
+  <!-- Bagian <body> ini semua isinya akan kelihatan di halaman -->
 
   <header>
+    <!-- Bagian kepala halaman -->
     <h1>Detail Blog</h1>
+    <!-- Judul halaman -->
     <nav>
+      <!-- Menu navigasi untuk pindah ke halaman lain -->
       <a href="index.html">Blog</a> |
       <a href="register.html">Form Pendaftaran</a> |
       <a href="nilai.html">Tabel Nilai</a> |
@@ -17,47 +29,88 @@
   </header>
 
   <main>
+    <!-- Isi utama halaman -->
+
     <article>
+      <!-- Artikel utama -->
       <figure>
-        <img src="assets/images/post1-cover.jpg" alt="Cover Artikel" width="400">
+        <!-- Figure untuk gambar + keterangannya -->
+        <img src="assets/images/Tian.jpg" alt="Cover Artikel" width="400">
+        <!-- Gambar sampul artikel -->
         <figcaption>Cover artikel: Belajar HTML Dasar</figcaption>
+        <!-- Tulisan keterangan gambar -->
       </figure>
 
       <h1>Belajar HTML Dasar</h1>
+      <!-- Judul artikel -->
+
       <p>By <strong>Christian</strong> — <time datetime="2025-08-29">29 Agustus 2025</time></p>
+      <!-- Info penulis + tanggal artikel -->
+
       <p>
         HTML adalah bahasa markup standar untuk membuat halaman web. 
         Dalam artikel ini kita akan mempelajari struktur dasar HTML, tag penting, dan cara menyusun halaman.
       </p>
+      <!-- Paragraf penjelasan -->
+
       <p>
         Setiap elemen HTML biasanya terdiri dari tag pembuka, konten, dan tag penutup. 
         Misalnya: <code>&lt;p&gt;Paragraf&lt;/p&gt;</code>.
       </p>
+      <!-- Paragraf dengan contoh kode HTML -->
+
       <ul>
+        <!-- Daftar kategori/topik artikel -->
         <li>HTML</li>
         <li>Pemrograman Web</li>
       </ul>
     </article>
 
     <section>
+      <!-- Bagian form komentar -->
       <h2>Tinggalkan Komentar</h2>
+      <!-- Judul bagian komentar -->
+
       <form action="#" method="post">
+        <!-- Form untuk menulis komentar -->
+
         <label for="nama">Nama:</label><br>
+        <!-- Label untuk kotak nama -->
         <input type="text" id="nama" name="nama" required><br><br>
+        <!-- Kotak untuk isi nama -->
 
         <label for="komentar">Komentar:</label><br>
+        <!-- Label untuk kotak komentar -->
         <textarea id="komentar" name="komentar" rows="4" cols="40" required></textarea><br><br>
+        <!-- Kotak besar untuk isi komentar -->
 
         <button type="submit">Kirim</button>
+        <!-- Tombol untuk mengirim komentar -->
       </form>
     </section>
 
-
     <section>
+      <!-- Bagian daftar komentar yang sudah ada -->
       <h2>Komentar</h2>
+      <!-- Judul daftar komentar -->
+
       <article>
-        <img src="assets/images/user1.jpg" alt="Foto User 1" width="50">
-        <p><strong>Ani</strong>: Artikelnya bagus, mudah dipahami!</p>
+        <!-- Komentar pertama -->
+        <img src="assets/images/uya.jpg" alt="Foto User 1" width="50">
+        <!-- Foto kecil user -->
+        <p><strong>Uya</strong>: Artikelnya bagus, mudah dipahami!</p>
+        <!-- Teks komentar user -->
       </article>
+
       <article>
-        <img src="assets/images/user2.jpg" a
+        <!-- Komentar kedua -->
+        <img src="assets/images/user2.jpg" alt="Foto User 2" width="50">
+        <!-- Foto kecil user kedua -->
+        <p><strong>User 2</strong>: Terima kasih, artikelnya membantu!</p>
+        <!-- Teks komentar user kedua -->
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>

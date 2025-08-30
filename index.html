@@ -1,48 +1,81 @@
 <!DOCTYPE html>
+<!-- Baris ini memberitahu browser kalau dokumen ini pakai HTML5 -->
+
 <html lang="id">
+<!-- Tag <html> ini untuk menandai awal halaman HTML, dan "lang=id" artinya pakai bahasa Indonesia -->
+
 <head>
+  <!-- Bagian <head> isinya pengaturan dasar halaman, bukan tampilan utama -->
   <meta charset="UTF-8">
+  <!-- Supaya teks bisa mendukung huruf-huruf khusus (contoh: é, ü, dll) -->
   <title>Blog Saya</title>
+  <!-- Judul halaman yang muncul di tab browser -->
 </head>
+
 <body>
+  <!-- Bagian <body> ini isinya semua yang akan terlihat di halaman -->
 
   <header>
+    <!-- <header> biasanya dipakai untuk bagian kepala halaman -->
     <h1>Blog Saya</h1>
+    <!-- Judul besar blog -->
     <nav>
+      <!-- <nav> ini tempat menu navigasi atau link antar halaman -->
       <a href="index.html">Blog</a> |
       <a href="register.html">Form Pendaftaran</a> |
       <a href="nilai.html">Tabel Nilai</a> |
       <a href="cv.html">CV</a>
+      <!-- Link-link di atas bisa diklik untuk pindah ke halaman lain -->
     </nav>
   </header>
 
   <main>
-    
-    <article>
-     <img src="assets/images/Tian.jpg" alt="Cover Artikel" width="400">
+    <!-- <main> adalah isi utama dari halaman -->
 
+    <article>
+      <!-- <article> dipakai untuk satu tulisan/artikel di blog -->
+      <img src="assets/images/Tian.jpg" alt="Cover Artikel" width="400">
+      <!-- Gambar sampul untuk artikel pertama -->
+      
       <h2><a href="detail-blog.html">Belajar HTML Dasar</a></h2>
+      <!-- Judul artikel, bisa diklik untuk buka halaman detail -->
+
       <p>By <strong>Christian</strong> — <time datetime="2025-08-29">29 Agustus 2025</time></p>
+      <!-- Informasi penulis dan tanggal dibuatnya artikel -->
+
       <ul>
+        <!-- <ul> ini untuk daftar poin -->
         <li>HTML</li>
         <li>Pemrograman Web</li>
+        <!-- Daftar kategori/topik artikel -->
       </ul>
     </article>
 
-   
     <article>
+      <!-- Artikel kedua -->
       <img src="assets/images/postku.jpg" alt="Cover Post 2" width="300">
+      <!-- Gambar sampul untuk artikel kedua -->
+
       <h2><a href="detail-blog.html">Tips Membuat CV Menarik</a></h2>
+      <!-- Judul artikel kedua, bisa diklik juga -->
+
       <p>By <strong>Christian</strong> — <time datetime="2025-08-28">28 Agustus 2025</time></p>
+      <!-- Info penulis dan tanggal artikel kedua -->
+
       <ul>
         <li>Karir</li>
         <li>CV</li>
+        <!-- Daftar kategori/topik artikel kedua -->
       </ul>
     </article>
   </main>
 
   <footer>
+    <!-- Bagian bawah halaman -->
     <p>&copy; 2025 Blog Saya</p>
+    <!-- Teks hak cipta -->
   </footer>
+
 </body>
 </html>
+<!-- Penutup halaman HTML -->
