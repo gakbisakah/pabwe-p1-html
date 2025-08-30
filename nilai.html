@@ -4,457 +4,404 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabel Perolehan Nilai Mahasiswa</title>
-  <style>
-    /* Menambahkan CSS dasar untuk tabel agar mirip dengan gambar. */
-    body {
-      font-family: sans-serif;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
-      vertical-align: middle;
-    }
-    thead th {
-      background-color: #e0e0e0;
-      color: #333;
-    }
-    th.green-bg {
-      background-color: #c6e0b4;
-    }
-    td.green-bg {
-      background-color: #e2f0d9;
-    }
-    th.blue-bg {
-      background-color: #c6d9f1;
-    }
-    td.blue-bg {
-      background-color: #e6f0f8;
-    }
-    th.orange-bg {
-      background-color: #fce4d6;
-    }
-    td.orange-bg {
-      background-color: #fef0e9;
-    }
-    th.purple-bg {
-      background-color: #e4d7f5;
-    }
-    td.purple-bg {
-      background-color: #f1eafb;
-    }
-    .text-left {
-      text-align: left;
-    }
-  </style>
+  <title>Tabel Perolehan Nilai</title>
 </head>
 
 <body>
-
   <header>
     <h1>Tabel Perolehan Nilai</h1>
     <nav>
       <a href="index.html">Blog</a> |
       <a href="register.html">Form Pendaftaran</a> |
-      <a href="nilai.html" aria-current="page">Tabel Nilai</a> |
-      <a href="cv.html">Curriculum Vitae</a>
+      <a href="nilai.html">Tabel Nilai</a> |
+      <a href="cv.html">CV</a>
     </nav>
   </header>
 
   <main>
-    <table>
+    <table border="1" cellpadding="5" cellspacing="0">
       <caption>Daftar Nilai Mahasiswa</caption>
       <thead>
         <tr>
           <th rowspan="3">No</th>
           <th rowspan="3">NIM</th>
-          <th rowspan="3" class="text-left">Nama</th>
+          <th rowspan="3">Nama</th>
           <th rowspan="3">Program Studi</th>
           <th rowspan="3">Kelas</th>
-          <th colspan="2" class="green-bg">Bentuk Komponen Bobot / Nilai Akhir</th>
-          <th colspan="3" class="blue-bg">Kuis</th>
-          <th colspan="5" class="orange-bg">Proyek</th>
-          <th colspan="3" class="purple-bg">Tugas</th>
-          <th colspan="3" class="green-bg">UAS</th>
-          <th colspan="3" class="purple-bg">UTS</th>
-          <th colspan="2" class="blue-bg">Bentuk Komponen Bobot / Nilai</th>
+          <th colspan="2">Bentuk Komponen Bobot / Nilai Akhir</th>
+          <th colspan="3">Kuis</th>
+          <th colspan="5">Proyek</th>
+          <th colspan="3">Tugas</th>
+          <th colspan="3">UAS</th>
+          <th colspan="3">UTS</th>
+          <th colspan="2">Bentuk Komponen Bobot / Nilai</th>
           <th rowspan="3">Nilai Akhir</th>
         </tr>
         <tr>
-          <th colspan="2" class="green-bg">Bobot</th>
-          <th colspan="3" class="blue-bg">Bobot</th>
-          <th colspan="5" class="orange-bg">Bobot</th>
-          <th colspan="3" class="purple-bg">Bobot</th>
-          <th colspan="3" class="green-bg">Bobot</th>
-          <th colspan="3" class="purple-bg">Bobot</th>
-          <th colspan="2" class="blue-bg">Bobot</th>
+          <th colspan="2">Bobot</th>
+          <th colspan="3">Bobot</th>
+          <th colspan="5">Bobot</th>
+          <th colspan="3">Bobot</th>
+          <th colspan="3">Bobot</th>
+          <th colspan="3">Bobot</th>
+          <th colspan="2">Bobot</th>
         </tr>
         <tr>
-          <th class="green-bg">Nilai Akhir</th>
-          <th class="green-bg">Bobot</th>
-          <th class="blue-bg">K1-2</th>
-          <th class="blue-bg">K1-2</th>
-          <th class="blue-bg">Bobot</th>
-          <th class="orange-bg">P1-1</th>
-          <th class="orange-bg">P2-1</th>
-          <th class="orange-bg">P3-1</th>
-          <th class="orange-bg">Bobot</th>
-          <th class="orange-bg">Total</th>
-          <th class="purple-bg">T1-1</th>
-          <th class="purple-bg">T2-1</th>
-          <th class="purple-bg">Bobot</th>
-          <th class="green-bg">UAS1-1</th>
-          <th class="green-bg">UAS2-1</th>
-          <th class="green-bg">Bobot</th>
-          <th class="purple-bg">UTS1-1</th>
-          <th class="purple-bg">UTS2-2</th>
-          <th class="purple-bg">UTS3-3</th>
-          <th class="blue-bg">Total</th>
-          <th class="blue-bg">Bobot</th>
-          <th class="blue-bg">Nilai</th>
+          <th>Nilai Akhir</th>
+          <th>Bobot</th>
+          <th>K1-2</th>
+          <th>K1-2</th>
+          <th>Bobot</th>
+          <th>P1-1</th>
+          <th>P2-1</th>
+          <th>P3-1</th>
+          <th>Bobot</th>
+          <th>Total</th>
+          <th>T1-1</th>
+          <th>T2-1</th>
+          <th>Bobot</th>
+          <th>UAS1-1</th>
+          <th>UAS2-1</th>
+          <th>Bobot</th>
+          <th>UTS1-1</th>
+          <th>UTS2-2</th>
+          <th>UTS3-3</th>
+          <th>Total</th>
+          <th>Bobot</th>
+          <th>Nilai</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>1</td>
           <td>1152400</td>
-          <td class="text-left">David Lodewick Simbolon</td>
+          <td>David Lodewick Simbolon</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>2</td>
           <td>1152400</td>
-          <td class="text-left">Edwin Christoffel</td>
+          <td>Edwin Christoffel</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>3</td>
           <td>1152400</td>
-          <td class="text-left">Astri Pitera Kalias</td>
+          <td>Astri Pitera Kalias</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>4</td>
           <td>1152400</td>
-          <td class="text-left">Gian Donovan</td>
+          <td>Gian Donovan</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>5</td>
           <td>1152400</td>
-          <td class="text-left">Rouli Claudius Panggabean</td>
+          <td>Rouli Claudius Panggabean</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>6</td>
           <td>1152400</td>
-          <td class="text-left">Martha Saulina Nabehan</td>
+          <td>Martha Saulina Nabehan</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>7</td>
           <td>1152400</td>
-          <td class="text-left">Miftahul Jannah Siregar</td>
+          <td>Miftahul Jannah Siregar</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>8</td>
           <td>1152400</td>
-          <td class="text-left">Dea Maranata Siregar</td>
+          <td>Dea Maranata Siregar</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>9</td>
           <td>1152400</td>
-          <td class="text-left">Sandrina Tiansa Sihite</td>
+          <td>Sandrina Tiansa Sihite</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>10</td>
           <td>1152400</td>
-          <td class="text-left">Dimas Rixkar Samuel</td>
+          <td>Dimas Rixkar Samuel</td>
           <td>Sarjana</td>
           <td>11F1</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <th colspan="5" class="text-left">Rata-rata</th>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="orange-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="green-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="purple-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
-          <td class="blue-bg">0</td>
+          <th colspan="5">Rata-rata</th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
           <td>0</td>
         </tr>
       </tfoot>
     </table>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Blog Saya. Hak Cipta Dilindungi.</p>
-  </footer>
-
 </body>
 </html>

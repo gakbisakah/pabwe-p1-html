@@ -4,52 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Blog - Belajar HTML Dasar</title>
-  </head>
+  <title>Detail Blog</title>
+</head>
 
 <body>
-
   <header>
     <h1>Detail Blog</h1>
     <nav>
       <a href="index.html">Blog</a> |
       <a href="register.html">Form Pendaftaran</a> |
       <a href="nilai.html">Tabel Nilai</a> |
-      <a href="cv.html">Curriculum Vitae</a>
+      <a href="cv.html">CV</a>
     </nav>
   </header>
 
   <main>
     <article>
-      <header>
-        <figure>
-          <img src="assets/images/Tian.jpg" alt="Cover artikel: Belajar HTML Dasar" width="400" height="267">
-          <figcaption>Cover artikel: Belajar HTML Dasar</figcaption>
-        </figure>
-        <h1>Belajar HTML Dasar</h1>
-        <p>
-          <img src="assets/images/christian.jpg" alt="Foto Christian, penulis artikel" width="30" height="30">
-          By <strong>Christian</strong> — <time datetime="2025-08-29">29 Agustus 2025</time>
+      <figure>
+        <img src="assets/images/Tian.jpg" alt="Cover Artikel: Belajar HTML Dasar" width="400">
+        <figcaption>Cover artikel: Belajar HTML Dasar</figcaption>
+      </figure>
+
+      <h1>Belajar HTML Dasar</h1>
+
+      <p>By <strong>Christian</strong> — <time datetime="2025-08-29">29 Agustus 2025</time></p>
+
+      <p>
+        HTML adalah bahasa markup standar untuk membuat halaman web.
+        Dalam artikel ini kita akan mempelajari struktur dasar HTML, tag penting, dan cara menyusun halaman.
+      </p>
+
+      <p>
+        Setiap elemen HTML biasanya terdiri dari tag pembuka, konten, dan tag penutup.
+        Misalnya: <code>&lt;p&gt;Paragraf&lt;/p&gt;</code>.
         </p>
-      </header>
-      <section>
-        <p>
-          HTML adalah bahasa markup standar untuk membuat halaman web.
-          Dalam artikel ini kita akan mempelajari struktur dasar HTML, tag penting, dan cara menyusun halaman.
-        </p>
-        <p>
-          Setiap elemen HTML biasanya terdiri dari tag pembuka, konten, dan tag penutup.
-          Misalnya: <code>&lt;p&gt;Paragraf&lt;/p&gt;</code>.
-          </p>
-        <h3>Label:</h3>
-        <ul>
-          <li>HTML</li>
-          <li>Pemrograman Web</li>
-        </ul>
-      </section>
+
+      <ul>
+        <li>HTML</li>
+        <li>Pemrograman Web</li>
+      </ul>
     </article>
 
-    <section id="komentar-section">
+    <section>
       <h2>Tinggalkan Komentar</h2>
       <form action="#" method="post">
         <label for="nama">Nama:</label><br>
@@ -62,28 +58,13 @@
       </form>
     </section>
 
-    <section id="daftar-komentar">
+    <section>
       <h2>Komentar</h2>
-      <article class="komentar-item">
-        <header>
-          <img src="assets/images/uya.jpg" alt="Foto profil Uya" width="50" height="50">
-          <strong>Uya</strong>
-        </header>
-        <p>Artikelnya bagus, mudah dipahami!</p>
-      </article>
-      <article class="komentar-item">
-        <header>
-          <img src="assets/images/dummy-user.jpg" alt="Foto profil user" width="50" height="50">
-          <strong>Budi</strong>
-        </header>
-        <p>Penjelasan tentang tag <code>&lt;p&gt;</code> sangat membantu. Terima kasih!</p>
+      <article>
+        <img src="assets/images/uya.jpg" alt="Foto Profil Uya" width="50">
+        <p><strong>Uya</strong>: Artikelnya bagus, mudah dipahami!</p>
       </article>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Blog Saya. Hak Cipta Dilindungi.</p>
-  </footer>
-
 </body>
 </html>
