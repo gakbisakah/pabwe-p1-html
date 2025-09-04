@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Detail Blog - Belajar HTML Dasar</title>
+</head>
+<body>
+  <header>
+    <h1>Detail Blog</h1>
+    <nav>
+      <a href="index.html">Ke Blog</a> |
+      <a href="register.html">Pendaftaran</a> |
+      <a href="nilai.html">Perolehan Nilai</a> |
+      <a href="cv.html">CV</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>Belajar HTML Dasar</h2>
+        <p>
+          <img src="images/author-christian.jpg" alt="Photo author Christian" width="60" height="60" style="vertical-align:middle;">
+          <strong>Christian Hutahaean</strong> &nbsp;|&nbsp;
+          <time datetime="2025-09-01">1 September 2025</time>
+        </p>
+        <p><strong>Label:</strong> HTML, Web, Tutorial</p>
+      </header>
+
+      <figure>
+        <img src="images/post1-cover-large.jpg" alt="Cover Belajar HTML Dasar" width="800" height="400">
+        <figcaption>Gambar Cover: Struktur dasar HTML</figcaption>
+      </figure>
+
+      <section aria-labelledby="deskripsi">
+        <h3 id="deskripsi">Deskripsi</h3>
+        <p>
+          Ini adalah deskripsi lengkap dari posting "Belajar HTML Dasar". Di sini dibahas tag-tag penting seperti
+          &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, heading, paragraf, gambar, tautan, dan form. Contoh dan penjelasan diberikan
+          secara runtut agar mudah dimengerti.
+        </p>
+        <p>
+          Paragraf tambahan untuk menjelaskan struktur dokumen, atribut umum, dan praktik baik dalam penulisan HTML.
+        </p>
+      </section>
+
+      <section aria-labelledby="komentar">
+        <h3 id="komentar">Komentar</h3>
+
+        <!-- Form komentar -->
+        <form action="#" method="post" aria-label="Form komentar">
+          <div>
+            <label for="comment-name">Nama:</label><br>
+            <input type="text" id="comment-name" name="name" required>
+          </div>
+          <div>
+            <label for="comment-photo-url">URL Photo (opsional):</label><br>
+            <input type="url" id="comment-photo-url" name="photo">
+          </div>
+          <div>
+            <label for="comment-text">Komentar:</label><br>
+            <textarea id="comment-text" name="comment" rows="4" required></textarea>
+          </div>
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Kirim Komentar</button>
+          </div>
+        </form>
+
+        <!-- Daftar komentar contoh -->
+        <ul>
+          <li>
+            <img src="images/commenter1.jpg" alt="Photo komentar 1" width="40" height="40" style="vertical-align:middle;">
+            <strong>Ani</strong>:
+            <p>Sangat membantu, terima kasih penjelasannya!</p>
+          </li>
+          <li>
+            <img src="images/commenter2.jpg" alt="Photo komentar 2" width="40" height="40" style="vertical-align:middle;">
+            <strong>Budi</strong>:
+            <p>Bagian formnya masih agak membingungkan tanpa contoh. Bisa ditambah contoh?</p>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <hr>
+    <p><a href="index.html">Kembali ke Blog</a></p>
+    <p>&copy; 2025 Blog Saya</p>
+  </footer>
+</body>
+</html>

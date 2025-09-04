@@ -8,59 +8,124 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
-    <h1>Form Pendaftaran</h1>
-    <nav>
-      <a href="index.html">Blog</a> |
-      <a href="register.html">Form Pendaftaran</a> |
-      <a href="nilai.html">Tabel Nilai</a> |
-      <a href="cv.html">CV</a>
+    <h1 align="center">🌟 Form Pendaftaran Unik 🌟</h1>
+    <nav align="center">
+      <a href="index.html">🏠 Blog</a> |
+      <a href="register.html">📝 Form Pendaftaran</a> |
+      <a href="nilai.html">📊 Tabel Nilai</a> |
+      <a href="cv.html">💼 CV</a>
     </nav>
+    <hr>
   </header>
 
+  <!-- FORM -->
   <main>
     <form action="#" method="post">
+      
+      <!-- INFORMASI PRIBADI -->
       <fieldset>
-        <legend>Informasi Pribadi</legend>
-        <label for="nama">Nama Lengkap:</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
-
-        <p>Jenis Kelamin:</p>
-        <input type="radio" id="laki" name="gender" value="Laki-laki" required>
-        <label for="laki">Laki-laki</label><br>
-        <input type="radio" id="perempuan" name="gender" value="Perempuan">
-        <label for="perempuan">Perempuan</label><br><br>
-
-        <label for="tempat">Tempat Lahir:</label><br>
-        <input type="text" id="tempat" name="tempat" required><br><br>
-
-        <label for="tanggal">Tanggal Lahir:</label><br>
-        <input type="date" id="tanggal" name="tanggal" required><br><br>
+        <legend><b>👤 Data Diri</b></legend>
+        <table>
+          <tr>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td>:</td>
+            <td><input type="text" id="nama" name="nama" placeholder="Tulis nama lengkap Anda" required></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+              <label for="laki">Laki-laki</label>
+              <input type="radio" id="perempuan" name="gender" value="Perempuan">
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tempat">Tempat Lahir</label></td>
+            <td>:</td>
+            <td><input type="text" id="tempat" name="tempat" placeholder="Kota kelahiran" required></td>
+          </tr>
+          <tr>
+            <td><label for="tanggal">Tanggal Lahir</label></td>
+            <td>:</td>
+            <td><input type="date" id="tanggal" name="tanggal" required></td>
+          </tr>
+        </table>
       </fieldset>
 
+      <br>
+
+      <!-- HOBI DAN PREFERENSI -->
       <fieldset>
-        <legend>Hobi dan Preferensi</legend>
-        <p>Hobi:</p>
-        <input type="checkbox" id="membaca" name="hobi" value="Membaca">
-        <label for="membaca">Membaca</label><br>
-        <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
-        <label for="olahraga">Olahraga</label><br>
-        <input type="checkbox" id="musik" name="hobi" value="Musik">
-        <label for="musik">Musik</label><br><br>
+        <legend><b>🎯 Hobi & Minat</b></legend>
+        <table>
+          <tr>
+            <td><input type="checkbox" id="membaca" name="hobi" value="Membaca"></td>
+            <td><label for="membaca">📚 Membaca</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="olahraga" name="hobi" value="Olahraga"></td>
+            <td><label for="olahraga">⚽ Olahraga</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="musik" name="hobi" value="Musik"></td>
+            <td><label for="musik">🎵 Musik</label></td>
+          </tr>
+        </table>
       </fieldset>
 
+      <br>
+
+      <!-- DETAIL AKUN -->
       <fieldset>
-        <legend>Detail Akun</legend>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+        <legend><b>🔑 Detail Akun</b></legend>
+        <table>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>:</td>
+            <td><input type="email" id="email" name="email" placeholder="contoh@email.com" required></td>
+          </tr>
+          <tr>
+            <td><label for="username">Username</label></td>
+            <td>:</td>
+            <td><input type="text" id="username" name="username" placeholder="Buat username unik" required></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>:</td>
+            <td><input type="password" id="password" name="password" placeholder="Masukkan password" required></td>
+          </tr>
+        </table>
       </fieldset>
 
-      <input type="checkbox" id="persetujuan" name="persetujuan" required>
-      <label for="persetujuan">Saya setuju dengan syarat dan ketentuan</label><br><br>
+      <br>
 
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
+      <!-- PERSYARATAN -->
+      <fieldset>
+        <legend><b>✅ Persetujuan</b></legend>
+        <p>
+          <input type="checkbox" id="persetujuan" name="persetujuan" required>
+          <label for="persetujuan">Saya menyetujui seluruh syarat & ketentuan yang berlaku</label>
+        </p>
+      </fieldset>
+
+      <br>
+
+      <!-- TOMBOL -->
+      <div align="center">
+        <button type="reset">🔄 Reset</button>
+        <button type="submit">📩 Daftar Sekarang</button>
+      </div>
     </form>
   </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr>
+    
+  </footer>
 </body>
 </html>
