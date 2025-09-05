@@ -4,128 +4,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Pendaftaran</title>
+  <title>Form Pendaftaran </title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header>
-    <h1 align="center">🌟 Form Pendaftaran Unik 🌟</h1>
+    <h1 align="center">📑 Form Pendaftaran </h1>
     <nav align="center">
       <a href="index.html">🏠 Blog</a> |
       <a href="register.html">📝 Form Pendaftaran</a> |
-      <a href="nilai.html">📊 Tabel Nilai</a> |
+      <a href="nilai.html">📊 Tabel Perolehan Nilai</a> |
       <a href="cv.html">💼 CV</a>
     </nav>
     <hr>
   </header>
 
-  <!-- FORM -->
-  <main>
-    <form action="#" method="post">
-      
-      <!-- INFORMASI PRIBADI -->
-      <fieldset>
-        <legend><b>👤 Data Diri</b></legend>
-        <table>
-          <tr>
-            <td><label for="nama">Nama Lengkap</label></td>
-            <td>:</td>
-            <td><input type="text" id="nama" name="nama" placeholder="Tulis nama lengkap Anda" required></td>
-          </tr>
-          <tr>
-            <td>Jenis Kelamin</td>
-            <td>:</td>
-            <td>
-              <input type="radio" id="laki" name="gender" value="Laki-laki" required>
-              <label for="laki">Laki-laki</label>
-              <input type="radio" id="perempuan" name="gender" value="Perempuan">
-              <label for="perempuan">Perempuan</label>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="tempat">Tempat Lahir</label></td>
-            <td>:</td>
-            <td><input type="text" id="tempat" name="tempat" placeholder="Kota kelahiran" required></td>
-          </tr>
-          <tr>
-            <td><label for="tanggal">Tanggal Lahir</label></td>
-            <td>:</td>
-            <td><input type="date" id="tanggal" name="tanggal" required></td>
-          </tr>
-        </table>
-      </fieldset>
+  <!-- KONTEN UTAMA: 3 KOLOM -->
+  <table border="0" width="100%" cellpadding="10">
+    <tr valign="top">
+      <!-- KIRI -->
+      <td width="25%">
+        <h3>ℹ️ Informasi</h3>
+        <p>Selamat datang di halaman pendaftaran unik ini! 🎉</p>
+        <p>Silakan isi data diri dengan lengkap, pastikan semua benar agar proses berjalan lancar.</p>
+        <p><b>Tips:</b></p>
+        <ul>
+          <li>Gunakan email aktif</li>
+          <li>Pilih password yang kuat</li>
+          <li>Baca syarat & ketentuan</li>
+        </ul>
+      </td>
 
-      <br>
+      <!-- TENGAH -->
+      <td width="50%">
+        <main>
+          <form action="#" method="post">
 
-      <!-- HOBI DAN PREFERENSI -->
-      <fieldset>
-        <legend><b>🎯 Hobi & Minat</b></legend>
-        <table>
-          <tr>
-            <td><input type="checkbox" id="membaca" name="hobi" value="Membaca"></td>
-            <td><label for="membaca">📚 Membaca</label></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" id="olahraga" name="hobi" value="Olahraga"></td>
-            <td><label for="olahraga">⚽ Olahraga</label></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" id="musik" name="hobi" value="Musik"></td>
-            <td><label for="musik">🎵 Musik</label></td>
-          </tr>
-        </table>
-      </fieldset>
+            <!-- DATA DIRI -->
+            <fieldset>
+              <legend><b>👤 Data Diri</b></legend>
+              <p>
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Nama lengkap Anda" required>
+              </p>
+              <p>
+                Jenis Kelamin:<br>
+                <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+              </p>
+              <p>
+                <label for="tempat">Tempat Lahir:</label><br>
+                <input type="text" id="tempat" name="tempat" placeholder="Kota kelahiran" required>
+              </p>
+              <p>
+                <label for="tanggal">Tanggal Lahir:</label><br>
+                <input type="date" id="tanggal" name="tanggal" required>
+              </p>
+            </fieldset>
 
-      <br>
+            <br>
 
-      <!-- DETAIL AKUN -->
-      <fieldset>
-        <legend><b>🔑 Detail Akun</b></legend>
-        <table>
-          <tr>
-            <td><label for="email">Email</label></td>
-            <td>:</td>
-            <td><input type="email" id="email" name="email" placeholder="contoh@email.com" required></td>
-          </tr>
-          <tr>
-            <td><label for="username">Username</label></td>
-            <td>:</td>
-            <td><input type="text" id="username" name="username" placeholder="Buat username unik" required></td>
-          </tr>
-          <tr>
-            <td><label for="password">Password</label></td>
-            <td>:</td>
-            <td><input type="password" id="password" name="password" placeholder="Masukkan password" required></td>
-          </tr>
-        </table>
-      </fieldset>
+            <!-- HOBI -->
+            <fieldset>
+              <legend><b>🎯 Hobi & Minat</b></legend>
+              <p><input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                <label for="membaca">📚 Membaca</label></p>
+              <p><input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                <label for="olahraga">⚽ Olahraga</label></p>
+              <p><input type="checkbox" id="musik" name="hobi" value="Musik">
+                <label for="musik">🎵 Musik</label></p>
+            </fieldset>
 
-      <br>
+            <br>
 
-      <!-- PERSYARATAN -->
-      <fieldset>
-        <legend><b>✅ Persetujuan</b></legend>
-        <p>
-          <input type="checkbox" id="persetujuan" name="persetujuan" required>
-          <label for="persetujuan">Saya menyetujui seluruh syarat & ketentuan yang berlaku</label>
-        </p>
-      </fieldset>
+            <!-- DETAIL AKUN -->
+            <fieldset>
+              <legend><b>🔑 Detail Akun</b></legend>
+              <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+              </p>
+              <p>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="Buat username unik" required>
+              </p>
+              <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+              </p>
+            </fieldset>
 
-      <br>
+            <br>
 
-      <!-- TOMBOL -->
-      <div align="center">
-        <button type="reset">🔄 Reset</button>
-        <button type="submit">📩 Daftar Sekarang</button>
-      </div>
-    </form>
-  </main>
+            <!-- PERSYARATAN -->
+            <fieldset>
+              <legend><b>✅ Persetujuan</b></legend>
+              <p>
+                <input type="checkbox" id="persetujuan" name="persetujuan" required>
+                <label for="persetujuan">Saya menyetujui seluruh syarat & ketentuan yang berlaku</label>
+              </p>
+            </fieldset>
 
-  <!-- FOOTER -->
-  <footer>
-    <hr>
-    
-  </footer>
+            <br>
+
+            <!-- TOMBOL -->
+            <div align="center">
+              <button type="reset">🔄 Reset</button>
+              <button type="submit">📩 Daftar Sekarang</button>
+            </div>
+          </form>
+        </main>
+      </td>
+
+      <!-- KANAN -->
+      <td width="25%">
+        <h3>💡 Catatan</h3>
+        <p>Pendaftaran ini bersifat gratis dan terbuka untuk siapa saja.</p>
+        <p>Gunakan form ini sebaik-baiknya untuk mengisi data Anda. Setelah mendaftar, Anda akan menerima email konfirmasi.</p>
+        <p><b>Kategori peserta:</b></p>
+        <ol>
+          <li>Mahasiswa</li>
+          <li>Pelajar</li>
+          <li>Profesional</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+
+
 </body>
 </html>

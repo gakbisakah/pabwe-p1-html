@@ -3,164 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📖 Blog Saya</title>
+  <title>📖 Blog — Christian Johannes Hutahaean</title>
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <h1>📖 Blog Saya</h1>
-    <p><em>Tempat berbagi ilmu, pengalaman, dan inspirasi.</em></p>
-    <nav>
-      <p>
-      <a href="index.html">🏠 Blog</a> |
-        <a href="register.html">📝 Form Pendaftaran</a> |
-        <a href="nilai.html">📊 Tabel Nilai</a> |
-        <a href="cv.html">💼 CV</a>
-      </p>
-    </nav>
+    <h1 align="center">📖 Blogku - Christian Johannes Hutahaean</h1>
+    <p align="center"><em>Catatan pribadi, eksperimen teknis, dan refleksi perkuliahan.</em></p>
     <hr>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <!-- STRUKTUR UTAMA DUA KOLOM -->
+  <table border="0" width="100%" cellpadding="15">
+    <tr valign="top">
 
-    <!-- Artikel Pertama -->
-    <article>
-      <header>
-        <h2><a href="detail-html.html">Belajar HTML Dasar</a></h2>
-        <p><em>Ditulis oleh <strong>Christian</strong> — <time datetime="2025-08-29">29 Agustus 2025</time></em></p>
-      </header>
+      <!-- KOLOM KIRI (SIDEBAR) -->
+      <td width="25%" bgcolor="#f8f8f8">
+        <!-- NAVIGASI -->
+        <nav>
+          <h3>🔗 Navigasi</h3>
+          <ul>
+            <li><a href="index.html">🏠 Blog</a></li>
+            <li><a href="register.html">📝 Form Pendaftaran</a></li>
+            <li><a href="nilai.html">📊 Tabel Perolehan Nilai</a></li>
+            <li><a href="cv.html">💼 CV</a></li>
+          </ul>
+        </nav>
+        <hr>
 
-      <figure>
-        <img src="assets/images/Tian.jpg" alt="Cover Artikel Belajar HTML Dasar" width="400">
-        <figcaption><small>Cover Artikel Belajar HTML Dasar</small></figcaption>
-      </figure>
+        <!-- TENTANG PENULIS -->
+        <section>
+          <h3>👤 Tentang Penulis</h3>
+          <p><strong>Christian Johannes Hutahaean</strong><br>
+          Mahasiswa Informatika IT Del (2023–2027).<br>
+          Email: <a href="mailto:chrisjh@gmail.com">chrisjh@gmail.com</a></p>
+          <p>Saya suka memecahkan masalah algoritmis, ngoprek command line, 
+          membuat proyek mini, dan menulis catatan refleksi untuk berbagi ilmu.</p>
+        </section>
+        <hr>
 
-      <section>
-        <h3>📌 Label</h3>
-        <ul>
-          <li>HTML</li>
-          <li>Pemrograman Web</li>
-          <li>Dasar Pemrograman</li>
-        </ul>
-      </section>
+        <!-- DAFTAR LABEL -->
+        <section>
+          <h3>🏷️ Label</h3>
+          <ul>
+            <li>Pemrograman</li>
+            <li>Sistem Operasi</li>
+            <li>Proyek Mini</li>
+            <li>Refleksi Akademik</li>
+            <li>Tips Belajar</li>
+            <li>UI/UX Eksperimen</li>
+            <li>Linux & Command Line</li>
+            <li>Java & OOP</li>
+          </ul>
+        </section>
+      </td>
 
-      <blockquote>
-        <p>"Belajar HTML adalah langkah pertama menuju dunia pemrograman web yang lebih luas."</p>
-      </blockquote>
+      <!-- KOLOM KANAN (ISI BLOG) -->
+      <td width="75%">
+        <main>
 
-      <p>HTML (HyperText Markup Language) merupakan bahasa dasar untuk membuat halaman web. Dengan HTML, kita bisa menampilkan teks, gambar, tabel, form, dan berbagai elemen lainnya di browser.</p>
+          <!-- COVER -->
+          <section align="center">
+            <figure>
+              <img src="assets/images/del.jpg" alt="Foto Kampus Del" width="80%">
+              
+            </figure>
+          </section>
+          
 
-      <section>
-        <h3>🎯 Manfaat Belajar HTML</h3>
-        <ol>
-          <li>Membuat website sederhana sendiri.</li>
-          <li>Menjadi fondasi untuk mempelajari CSS dan JavaScript.</li>
-          <li>Dipakai dalam semua platform web modern.</li>
-        </ol>
-      </section>
-      <hr>
-    </article>
+          <!-- ARTIKEL 1 -->
+          <article>
+            <h2>Belajar Sistem Operasi: Dari Proses ke Kernel</h2>
+            <p><em>Ditulis oleh Christian Johannes Hutahaean — 
+              <time datetime="2025-08-28T17:12">28 Agustus 2025, 17:12 WIB</time></em></p>
+            <p><strong>Ringkasan:</strong> Catatan tentang multitasking, scheduler, memori virtual, dan interrupt dengan analogi warung kopi.</p>
+            <p>Dalam praktikum OS, kami membongkar scheduler, melihat preemption, 
+              serta menguji scheduling policy dengan kernel sederhana buatan sendiri. 
+              Saya membuat analogi: proses = pelanggan, CPU = barista, scheduler = pemilik warung. 
+              Di akhir, saya tambahkan latihan dan referensi buku.</p>
+            <hr>
+          </article>
 
-    <!-- Artikel Kedua -->
-    <article>
-      <header>
-        <h2><a href="detail-cv.html">Tips Membuat CV Menarik</a></h2>
-        <p><em>Ditulis oleh <strong>Christian J H</strong> — <time datetime="2025-09-01">1 September 2025</time></em></p>
-      </header>
+          <!-- ARTIKEL 2 -->
+          <article>
+            <h2>Proyek Mini: Aplikasi To-Do CLI dengan File Persistence</h2>
+            <p><em>Ditulis oleh Christian Johannes Hutahaean — 
+              <time datetime="2025-07-15">15 Juli 2025</time></em></p>
+            <p>Membangun aplikasi CLI sederhana untuk mencatat to-do list dengan penyimpanan file JSON. 
+              Fokus pada repository pattern, separation of concerns, dan penulisan test. 
+              Saya berbagi bug menarik ketika menyimpan karakter non-ASCII, 
+              sekaligus membahas tips debugging dan pseudo-code untuk concurrency.</p>
+            <hr>
+          </article>
 
-      <figure>
-        <img src="assets/images/postku.jpg" alt="Cover Artikel Tips Membuat CV Menarik" width="350">
-        <figcaption><small>Cover Artikel Tips Membuat CV Menarik</small></figcaption>
-      </figure>
+          <!-- ARTIKEL 3 -->
+          <article>
+            <h2>Refleksi Semester: Mata Kuliah yang Mengubah Pandangan Saya</h2>
+            <p><em>Ditulis oleh Christian Johannes Hutahaean — 
+              <time datetime="2025-03-02">2 Maret 2025</time></em></p>
+            <p>Semester ini mengubah cara saya belajar: Struktur Data melatih logika, 
+              PBO membuat kode rapi, Matematika Diskrit melatih penalaran. 
+              Saya juga belajar pentingnya kerja tim, pembagian tugas, dan menyelesaikan konflik. 
+              Saya bagikan daftar buku & sumber belajar yang relevan.</p>
+            <hr>
+          </article>
 
-      <section>
-        <h3>📌 Label</h3>
-        <ul>
-          <li>Karir</li>
-          <li>CV</li>
-          <li>Tips Kerja</li>
-        </ul>
-      </section>
-
-      <details>
-        <summary>💡 Cuplikan Isi Artikel</summary>
-        <p>CV yang baik bukan hanya menampilkan data diri, tapi juga menunjukkan kepribadian dan profesionalitas. Gunakan desain sederhana, ringkas, dan mudah dibaca HRD.</p>
-      </details>
-
-      <section>
-        <h3>🗒️ Poin Penting dalam CV</h3>
-        <table border="1" cellpadding="5" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Bagian</th>
-              <th>Isi Wajib</th>
-              <th>Keterangan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Identitas</td>
-              <td>Nama, Kontak, Email</td>
-              <td>Pastikan jelas dan mudah dihubungi</td>
-            </tr>
-            <tr>
-              <td>Pendidikan</td>
-              <td>Riwayat Pendidikan</td>
-              <td>Mulai dari terbaru</td>
-            </tr>
-            <tr>
-              <td>Pengalaman</td>
-              <td>Kerja/Magang</td>
-              <td>Sertakan deskripsi singkat</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <hr>
-    </article>
-
-    <!-- Artikel Ketiga -->
-    <article>
-      <header>
-        <h2><a href="detail-tips.html">Tips Belajar Efektif</a></h2>
-        <p><em>Ditulis oleh <strong>Tim Quricky</strong> — <time datetime="2025-09-03">3 September 2025</time></em></p>
-      </header>
-
-      <section>
-        <h3>📌 Label</h3>
-        <ul>
-          <li>Pendidikan</li>
-          <li>Belajar</li>
-          <li>Motivasi</li>
-        </ul>
-      </section>
-
-      <p>Agar belajar lebih efektif, cobalah beberapa tips berikut:</p>
-      <ul>
-        <li>Buat jadwal belajar rutin setiap hari.</li>
-        <li>Gunakan teknik pomodoro (25 menit fokus, 5 menit istirahat).</li>
-        <li>Catat poin penting, bukan semua isi buku.</li>
-        <li>Diskusi dengan teman untuk memperkuat pemahaman.</li>
-      </ul>
-
-      <blockquote>
-        <p>"Belajar bukan soal lama waktunya, tapi bagaimana kualitas fokusnya."</p>
-    
-    </article>
-
-  </main>
-
-
+        </main>
+      </td>
+    </tr>
+  </table>
 
   <!-- FOOTER -->
-  <footer>
+  <footer align="center">
     <hr>
-    <p>&copy; 2025 Blog Saya — Dibuat oleh Christian J. Hutahaean</p>
-    <address>
-      Hubungi saya di: <a href="mailto:christian@example.com">christian@.com</a>
-    </address>
+    <p>&copy; 2025 Blog Christian Johannes Hutahaean</p>
   </footer>
 
 </body>
