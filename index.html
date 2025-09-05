@@ -1,124 +1,118 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📖 Blog — Christian Johannes Hutahaean</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 Blog — Christian Johannes Hutahaean</title>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1 align="center">📖 Blogku - Christian Johannes Hutahaean</h1>
-    <p align="center"><em>Catatan pribadi, eksperimen teknis, dan refleksi perkuliahan.</em></p>
-    <hr>
-  </header>
-
-  <!-- STRUKTUR UTAMA DUA KOLOM -->
-  <table border="0" width="100%" cellpadding="15">
-    <tr valign="top">
-
-      <!-- KOLOM KIRI (SIDEBAR) -->
-      <td width="25%" bgcolor="#f8f8f8">
-        <!-- NAVIGASI -->
-        <nav>
-          <h3>🔗 Navigasi</h3>
-          <ul>
-            <li><a href="index.html">🏠 Blog</a></li>
-            <li><a href="register.html">📝 Form Pendaftaran</a></li>
-            <li><a href="nilai.html">📊 Tabel Perolehan Nilai</a></li>
-            <li><a href="cv.html">💼 CV</a></li>
-          </ul>
-        </nav>
+    <!-- HEADER: Berisi judul utama dan deskripsi blog -->
+    <header>
+        <h1>📖 Blogku - Christian Johannes Hutahaean</h1>
+        <p><em>Catatan pribadi, eksperimen teknis, dan refleksi perkuliahan.</em></p>
         <hr>
+    </header>
 
-        <!-- TENTANG PENULIS -->
-        <section>
-          <h3>👤 Tentang Penulis</h3>
-          <p><strong>Christian Johannes Hutahaean</strong><br>
-          Mahasiswa Informatika IT Del (2023–2027).<br>
-          Email: <a href="mailto:chrisjh@gmail.com">chrisjh@gmail.com</a></p>
-          <p>Saya suka memecahkan masalah algoritmis, ngoprek command line, 
-          membuat proyek mini, dan menulis catatan refleksi untuk berbagi ilmu.</p>
-        </section>
-        <hr>
+    <!-- CONTAINER UTAMA UNTUK TATA LETAK DUA KOLOM (tanpa CSS, ini akan tampil menumpuk) -->
+    <div>
+        <!-- ASIDE: Bagian sidebar/kolom kiri berisi navigasi dan info penulis -->
+        <aside>
+            <!-- NAVIGASI -->
+            <nav>
+                <h2>🔗 Navigasi</h2>
+                <ul>
+                    <li><a href="index.html">🏠 Blog</a></li>
+                    <li><a href="register.html">📝 Form Pendaftaran</a></li>
+                    <li><a href="nilai.html">📊 Tabel Perolehan Nilai</a></li>
+                    <li><a href="cv.html">💼 CV</a></li>
+                </ul>
+            </nav>
+            <hr>
 
-        <!-- DAFTAR LABEL -->
-        <section>
-          <h3>🏷️ Label</h3>
-          <ul>
-            <li>Pemrograman</li>
-            <li>Sistem Operasi</li>
-            <li>Proyek Mini</li>
-            <li>Refleksi Akademik</li>
-            <li>Tips Belajar</li>
-            <li>UI/UX Eksperimen</li>
-            <li>Linux & Command Line</li>
-            <li>Java & OOP</li>
-          </ul>
-        </section>
-      </td>
+            <!-- TENTANG PENULIS -->
+            <section>
+                <h2>👤 Tentang Penulis</h2>
+                <p><strong>Christian Johannes Hutahaean</strong><br>
+                Mahasiswa Informatika IT Del (2023–2027)<br>
+                Email: <a href="mailto:chrisjh@gmail.com">chrisjh@gmail.com</a></p>
+                <p>Saya suka memecahkan masalah algoritmis, ngoprek command line, 
+                membuat proyek mini, dan menulis catatan refleksi untuk berbagi ilmu.</p>
+            </section>
+            <hr>
 
-      <!-- KOLOM KANAN (ISI BLOG) -->
-      <td width="75%">
+            <!-- DAFTAR LABEL -->
+            <section>
+                <h2>🏷️ Label</h2>
+                <ul>
+                    <li>Pemrograman</li>
+                    <li>Sistem Operasi</li>
+                    <li>Proyek Mini</li>
+                    <li>Refleksi Akademik</li>
+                    <li>Tips Belajar</li>
+                    <li>UI/UX Eksperimen</li>
+                    <li>Linux & Command Line</li>
+                    <li>Java & OOP</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- MAIN: Bagian utama/kolom kanan berisi konten utama blog -->
         <main>
-
-          <!-- COVER -->
-          <section align="center">
-            <figure>
-              <img src="assets/images/del.jpg" alt="Foto Kampus Del" width="80%">
-              
-            </figure>
-          </section>
-          
-
-          <!-- ARTIKEL 1 -->
-          <article>
-            <h2>Belajar Sistem Operasi: Dari Proses ke Kernel</h2>
-            <p><em>Ditulis oleh Christian Johannes Hutahaean — 
-              <time datetime="2025-08-28T17:12">28 Agustus 2025, 17:12 WIB</time></em></p>
-            <p><strong>Ringkasan:</strong> Catatan tentang multitasking, scheduler, memori virtual, dan interrupt dengan analogi warung kopi.</p>
-            <p>Dalam praktikum OS, kami membongkar scheduler, melihat preemption, 
-              serta menguji scheduling policy dengan kernel sederhana buatan sendiri. 
-              Saya membuat analogi: proses = pelanggan, CPU = barista, scheduler = pemilik warung. 
-              Di akhir, saya tambahkan latihan dan referensi buku.</p>
+            <!-- COVER -->
+            <section>
+                <h2>📷 Foto Kampus</h2>
+                <figure>
+                    <img src="assets/images/del.jpg" alt="Foto Kampus Del">
+                    <figcaption>Kampus IT Del</figcaption>
+                </figure>
+            </section>
             <hr>
-          </article>
 
-          <!-- ARTIKEL 2 -->
-          <article>
-            <h2>Proyek Mini: Aplikasi To-Do CLI dengan File Persistence</h2>
-            <p><em>Ditulis oleh Christian Johannes Hutahaean — 
-              <time datetime="2025-07-15">15 Juli 2025</time></em></p>
-            <p>Membangun aplikasi CLI sederhana untuk mencatat to-do list dengan penyimpanan file JSON. 
-              Fokus pada repository pattern, separation of concerns, dan penulisan test. 
-              Saya berbagi bug menarik ketika menyimpan karakter non-ASCII, 
-              sekaligus membahas tips debugging dan pseudo-code untuk concurrency.</p>
-            <hr>
-          </article>
+            <!-- ARTIKEL 1 -->
+            <article>
+                <h2>Belajar Sistem Operasi: Dari Proses ke Kernel</h2>
+                <p><em>Ditulis oleh Christian Johannes Hutahaean — 
+                <time datetime="2025-08-28T17:12">28 Agustus 2025, 17:12 WIB</time></em></p>
+                <p><strong>Ringkasan:</strong> Catatan tentang multitasking, scheduler, memori virtual, dan interrupt dengan analogi warung kopi.</p>
+                <p>Dalam praktikum OS, kami membongkar scheduler, melihat preemption, 
+                serta menguji scheduling policy dengan kernel sederhana buatan sendiri. 
+                Saya membuat analogi: proses = pelanggan, CPU = barista, scheduler = pemilik warung. 
+                Di akhir, saya tambahkan latihan dan referensi buku.</p>
+                <hr>
+            </article>
 
-          <!-- ARTIKEL 3 -->
-          <article>
-            <h2>Refleksi Semester: Mata Kuliah yang Mengubah Pandangan Saya</h2>
-            <p><em>Ditulis oleh Christian Johannes Hutahaean — 
-              <time datetime="2025-03-02">2 Maret 2025</time></em></p>
-            <p>Semester ini mengubah cara saya belajar: Struktur Data melatih logika, 
-              PBO membuat kode rapi, Matematika Diskrit melatih penalaran. 
-              Saya juga belajar pentingnya kerja tim, pembagian tugas, dan menyelesaikan konflik. 
-              Saya bagikan daftar buku & sumber belajar yang relevan.</p>
-            <hr>
-          </article>
+            <!-- ARTIKEL 2 -->
+            <article>
+                <h2>Proyek Mini: Aplikasi To-Do CLI dengan File Persistence</h2>
+                <p><em>Ditulis oleh Christian Johannes Hutahaean — 
+                <time datetime="2025-07-15">15 Juli 2025</time></em></p>
+                <p>Membangun aplikasi CLI sederhana untuk mencatat to-do list dengan penyimpanan file JSON. 
+                Fokus pada repository pattern, separation of concerns, dan penulisan test. 
+                Saya berbagi bug menarik ketika menyimpan karakter non-ASCII, 
+                sekaligus membahas tips debugging dan pseudo-code untuk concurrency.</p>
+                <hr>
+            </article>
 
+            <!-- ARTIKEL 3 -->
+            <article>
+                <h2>Refleksi Semester: Mata Kuliah yang Mengubah Pandangan Saya</h2>
+                <p><em>Ditulis oleh Christian Johannes Hutahaean — 
+                <time datetime="2025-03-02">2 Maret 2025</time></em></p>
+                <p>Semester ini mengubah cara saya belajar: Struktur Data melatih logika, 
+                PBO membuat kode rapi, Matematika Diskrit melatih penalaran. 
+                Saya juga belajar pentingnya kerja tim, pembagian tugas, dan menyelesaikan konflik. 
+                Saya bagikan daftar buku & sumber belajar yang relevan.</p>
+                <hr>
+            </article>
         </main>
-      </td>
-    </tr>
-  </table>
+    </div>
 
-  <!-- FOOTER -->
-  <footer align="center">
-    <hr>
-    <p>&copy; 2025 Blog Christian Johannes Hutahaean</p>
-  </footer>
+    <!-- FOOTER: Berisi hak cipta blog -->
+    <footer>
+        <hr>
+        <p>&copy; 2025 Blog Christian Johannes Hutahaean</p>
+    </footer>
 
 </body>
 </html>
